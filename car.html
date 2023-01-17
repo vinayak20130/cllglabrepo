@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    <body>
+    
+    <canvas id="busCanvas" width="200" height="100"></canvas>
+    
+    <script>
+      var canvas = document.getElementById("busCanvas");
+      var ctx = canvas.getContext("2d");
+    
+      // draw the bus body
+      ctx.fillStyle = "pink";
+      ctx.fillRect(50, 10, 100, 50);
+    
+      // draw the wheels
+      ctx.fillStyle = "black";
+      ctx.beginPath();
+      ctx.arc(70, 70, 10, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(130, 70, 10, 0, 2 * Math.PI);
+      ctx.fill();
+      
+      // draw the windshield
+      ctx.fillStyle = "white";
+      ctx.fillRect(70, 20, 30, 20);
+      
+      //draw the headlights
+      ctx.fillStyle = "white";
+      ctx.beginPath();
+      ctx.arc(50, 40, 5, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(150, 40, 5, 0, 2 * Math.PI);
+      ctx.fill();
+    
+    </script>
+    
+    </body>
+    </html>
+    
+    
+      
+</body>
+</html>
